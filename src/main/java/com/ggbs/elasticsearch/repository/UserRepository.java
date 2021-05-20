@@ -8,6 +8,6 @@ import com.ggbs.elasticsearch.model.User;
 @Repository
 public interface UserRepository extends ElasticsearchRepository<User, String>{
 
-	User findByFirstName(String firstName);
+	Iterable<User> findByFirstName(String firstName);
 
 }
